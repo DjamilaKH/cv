@@ -1,0 +1,35 @@
+.image {
+ 
+    height: 110px;
+    width: 150px;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+  
+  }
+  
+  .btmenu{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 400px;
+    font-size:large;
+   
+  }
+  .custom-toolbar {
+    background: linear-gradient(to bottom, #fff, #A4A6A3 );
+    color: #fff;
+    padding: 10px;
+  }
+  .icons{
+    margin-left: 50px;
+    padding: auto;
+  }
+   mat-form-field {
+   
+    color: #fff;
+   min-width:500px;
+  margin-right: 400px;
+    margin-top: 18px;
+  }
+  
+  

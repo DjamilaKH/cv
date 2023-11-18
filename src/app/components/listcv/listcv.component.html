@@ -1,0 +1,27 @@
+<mat-grid-list cols="3" rowHeight="400px">
+  <mat-grid-tile *ngFor="let cv of Cv" class="cv-container">
+    <mat-card class="cv-card" style="background-color:#E6E0ED; margin-bottom: auto; margin-top: 10px; padding: 50px; margin-left: 20px; margin-right: 20px;" (click)="goToCv(cv)" >
+      <!-- <img mat-card-image class="profile-image" [src]="cv.photoCv" alt="Photo de profil"> -->
+
+      <mat-card-header>
+        <mat-card-title>{{ cv.titCV }}</mat-card-title>
+        <mat-card-subtitle>{{ cv.email }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <h3>{{ cv.prenom }} {{ cv.nom }}</h3>
+        <p><strong>Téléphone:</strong> {{ cv.telephone }}</p>
+        <p><strong>Profil:</strong> {{ cv.profilCv }}</p>
+
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-fab
+  class="mat-elevation-z8 rounded-fab"
+  style="position: fixed; bottom: 25px; right: 25px; background-color:#9980B2 ;"
+  [routerLink]="['/add/']"
+  color="primary"
+>
+  <mat-icon>add</mat-icon>
+</mat-fab>

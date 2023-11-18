@@ -1,0 +1,214 @@
+/* .example-spacer {
+  flex: 1 1 auto;
+} */
+form.dimention {
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  
+  mat-card {
+    margin-bottom: 20px;
+  }
+  
+  mat-card-content {
+    padding: 20px;
+  }
+  
+  
+  mat-form-field {
+    margin-bottom: 10px;
+  }
+  
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  button{
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+  }
+  /* [type="submit"]  */
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+    
+   
+  }
+  textarea {
+    resize: vertical;
+    height: 100px;
+    color: black;
+   
+  }
+  td {
+    padding-right: 8px;
+  }
+  ::ng-deep .custom-class .mat-form-field-underline {
+    display: none;
+  }
+  
+  #map {
+    width: 100%;
+    height: 50px; /* Ajustez la hauteur selon vos besoins */
+  }
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-field {
+    
+    flex: 1 0 25%; /* Ajustez la largeur selon vos préférences */
+    margin-right: 10px; /* Ajoutez une marge à droite pour séparer les champs */
+  }
+  
+  .container {
+    background-color: #E3E3E2 
+    ;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .map-container {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .select-container {
+    flex: 1;
+    margin-left: 10px;
+  }
+  mat-card{
+    background-color: #E3E3E2 ;
+  color: black;}
+  
+  .custom-select {
+    width: 200px; 
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .custom-select .mat-select-trigger {
+    background-color: #ffffff; /* Couleur de fond */
+    border: 1px solid #cccccc; /* Bordure */
+    padding: 8px; /* Espacement interne */
+    height: 36px; /* Hauteur de la zone de sélection */
+    line-height: 36px; /* Hauteur de ligne */
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .profile-image {
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+  .custom-dialog {
+    top: 10%; /* Ajuster la position verticale */
+    left: 10%; /* Ajuster la position horizontale */
+    right: 10%; /* Ajuster la position horizontale */
+    bottom: 10%; /* Ajuster la position verticale */
+    overflow-y: auto; /* Activer le défilement vertical si nécessaire */
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 3000px;
+  }
+  
+  
+  .language-container {
+    padding: 20px;
+  }
+  
+  .language-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .level-slider {
+    width: 300px;
+  }
+  
+  .mat-slider-horizontal .mat-slider-wrapper {
+    height: 10px;
+  }
+  
+  .mat-slider-horizontal .mat-slider-thumb {
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+  }
+  
+  .mat-slider-horizontal .mat-slider-thumb-label {
+    font-size: 12px;
+    margin-top: -28px;
+    padding: 4px;
+  }
+  
+  .custom-select {
+    width: 200px;
+  }
+  .mat-slider-horizontal .mat-slider-wrapper {
+    height: 10px;
+  }
+  
+  .mat-slider-horizontal .mat-slider-thumb {
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+  }
+  
+  .mat-slider-horizontal .mat-slider-thumb-label {
+    font-size: 12px;
+    margin-top: -28px;
+    padding: 4px;
+  }
+  .avatar-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .avatar-label img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .avatar-label i {
+    font-size: 40px;
+  }
+  
+  .avatar-label span {
+    font-size: 14px;
+  }
+  img{
+    border-radius: 50%;
+  }

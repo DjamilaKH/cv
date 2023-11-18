@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import './colors';
+
+
+/* ======== Thèmes personnalisés de matériaux angulaires ======== */ 
+$app-MediumVioletRed: mat-palette($MediumVioletRed); 
+$app-Navy: mat-palette($Navy); 
+$app-Gri_cendre: mat-palette($Gri_cendre);
+$orange_tangerine : mat-light-theme($orange_tangerine) ;
+$Violet_tres_fonce : mat-light-theme($Violet_tres_fonce) ;
+$brand-light-theme : mat-light-theme($MediumVioletRed, $Navy, $Gri_cendre, $orange_tangerine, $Violet_tres_fonce) ;
+
+@include angular-material-theme($brand-light-theme);

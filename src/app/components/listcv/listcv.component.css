@@ -1,0 +1,50 @@
+
+/* CSS personnalisé pour la taille de l'image de profil */
+.profile-image {
+    max-width: 100px; /* Ajustez la taille maximale de l'image selon vos préférences */
+    max-height: 100px; /* Ajustez la taille maximale de l'image selon vos préférences */
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  
+  .cv-container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    height: 200%; 
+  }
+  
+  /* .cv-card {
+    width: 700px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-right: 600px; 
+    margin-bottom: 500px;
+  
+    padding-bottom: 200px;
+    padding-top: 50px;
+  }
+   */
+  
+  
+  
+  
+  /* CSS personnalisé pour le bouton rond */
+  .rounded-fab {
+    border-radius: 50%;
+    width: 64px; /* Ajustez la taille du bouton si nécessaire */
+    height: 64px; /* Ajustez la taille du bouton si nécessaire */
+    line-height: 64px; /* Ajustez la taille du bouton si nécessaire */
+    text-align: center;
+    overflow: hidden;
+  }
+  .rounded-fab .mat-button-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+  

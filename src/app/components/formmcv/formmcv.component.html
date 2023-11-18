@@ -1,0 +1,148 @@
+
+      <form name="myForm" *ngIf="cv ||isAddCv " (ngSubmit)="Submit()" class="dimention" 
+      style="margin-top: 100px; margin-bottom: 100px">
+  
+  <!-- <mat-card class="avatar-label" (click)="avatarInput.click()">
+    <img *ngIf="avatarPreview" [src]="avatarPreview" alt="Avatar" />
+    <mat-icon class="avatar-icon" *ngIf="!avatarPreview"
+      ><img src="../../../assets/téléchargement.png"
+    /></mat-icon>
+  </mat-card> 
+  <input
+    type="file"
+    id="avatar"
+    #avatarInput
+    style="display: none"
+    (change)="onFileSelected($event)"
+    accept="image/*"
+  />  -->
+
+  <mat-card>
+    <mat-card-content>
+      <h5><b>Titre de CV</b></h5>
+      <p>Ajouter un titre à votre CV en trois mots maximum</p>
+      <mat-form-field >
+        <input
+          matInput
+          placeholder="ex : Développeur Full Stack" id="titCV"
+          [(ngModel)]="cv.titCV" name="titCV"
+          #titCV="ngModel" required type="text"
+        />   
+        <div *ngIf="titCV.invalid &&  titCV.touched">
+          <div *ngIf="titCV.errors?.['required']">Le nom est obligatoire.</div>
+        </div>      
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-form-field>
+      <input matInput placeholder="Prenom" required id="prenom" [(ngModel)]="cv.prenom" name="prenom"
+      #prenom="ngModel" type="text"/>
+
+      <div *ngIf="prenom.invalid &&  prenom.touched">
+        <div *ngIf="prenom.errors?.['required']">Le nom est obligatoire.</div>
+      </div> 
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Nom" required id="nom" [(ngModel)]="cv.nom" name="nom"
+      #nom="ngModel" type="text"/>
+      <div *ngIf="nom.invalid &&  nom.touched">
+        <div *ngIf="nom.errors?.['required']">Le nom est obligatoire.</div>
+      </div> 
+
+      <mat-error *ngIf="cvForm.get('nom')?.hasError('required')">Le nom est requis</mat-error>
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-icon>email</mat-icon>
+      <input matInput placeholder="Email"  required [(ngModel)]="cv.email" name="email"
+      #email="ngModel" type="text" id="email" type="email"/>
+      <div *ngIf="email.invalid &&  email.touched">
+        <div *ngIf="email.errors?.['required']">Le nom est obligatoire.</div>
+      </div> 
+
+      <!-- <mat-error *ngIf="cvForm.get('email')?.hasError('required')">L'email est requis</mat-error>
+      <mat-error *ngIf="cvForm.get('email')?.hasError('email')">L'email n'est pas valide</mat-error> -->
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-icon>phone</mat-icon>
+      <input
+        matInput
+        placeholder="99-999-999"
+        [(ngModel)]="cv.telephone" name="telephone"
+      #telephone="ngModel" type="text" required id="telephone" type="text"
+      />
+
+      <div *ngIf="telephone.invalid &&  telephone.touched">
+        <div *ngIf="telephone.errors?.['required']">Le nom est obligatoire.</div>
+      </div> 
+
+      <!-- <mat-error *ngIf="cvForm.get('telephone')?.hasError('required')">Le numéro de téléphone est requis</mat-error>
+    <mat-error *ngIf="cvForm.get('telephone')?.hasError('telephoneFormat')">Le numéro de téléphone  doit etre sous la forme : 99-999-999</mat-error> -->
+    </mat-form-field>
+  </mat-card>
+
+  <div class="profile-container">
+    <mat-card>
+      <mat-card-content>
+        <h5><b>Description de profil</b></h5>
+        <p>
+          Résumez votre profil technique en quelques mots-clés pour aider les
+          recruteurs à vous trouver
+        </p>
+        <mat-form-field>
+          <textarea
+            matInput
+            placeholder="ex : Mastère télédétéction en géomatique"
+            [(ngModel)]="cv.profilCv" name="profilCv"
+            #profilCv="ngModel" 
+            id="profilCv" required type="text">  
+        </textarea>
+        <div *ngIf="profilCv.invalid &&  profilCv.touched">
+          <div *ngIf="profilCv.errors?.['required']">Le nom est obligatoire.</div>
+        </div> 
+  
+        <!-- <mat-error *ngIf="cvForm.get('profilCv')?.hasError('required')">Le profil est requis</mat-error> -->
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+    <div class="profile-image">
+      <img
+        src="../../../assets/titre.jpg"
+        alt="Image de profil"
+        style="width: 300px; height: 230px; margin-left: 10px"
+      />
+    </div>
+  </div>
+
+  <mat-card>
+    <mat-card-title style="margin-left: 20px"
+      ><h5><b>Objectifs de carrière</b></h5></mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <textarea
+          matInput
+          placeholder="Description"
+          [(ngModel)]="cv.objecCarri" name="objecCarri"
+          #objecCarri="ngModel"  id="objecCarri" required type="text"
+        ></textarea> 
+
+        <div *ngIf="objecCarri.invalid &&  objecCarri.touched">
+          <div *ngIf="objecCarri.errors?.['required']">Le nom est obligatoire.</div>
+        </div> 
+
+        <!-- <mat-error *ngIf="cvForm.get('objecCarri')?.hasError('required')">L' objecCarri est requis.</mat-error> -->
+       
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+  <button
+    mat-raised-button style="background-color: #e6e0ed; color: #020005" type="submit">
+    Enregistrer et Contunier
+  </button>
+</form>
+<!-- [disabled]="cvForm.invalid" -->

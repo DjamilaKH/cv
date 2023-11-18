@@ -1,0 +1,23 @@
+<mat-toolbar class="custom-toolbar"> 
+    <div class="container">
+        <img mat-card-image src="../assets/logo1.png" class="image" routerLink="/add/">
+      </div>
+     
+      <button class="btmenu" mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Option 1</button>
+        <button mat-menu-item>Option 2</button>
+        <button mat-menu-item>Option 3</button>
+      </mat-menu>
+      <mat-form-field style=" background-color: transparent;color: white">
+        <input   matInput placeholder="Recherche par mots clé" style="font-size: 15px; color: aliceblue;">
+        <button mat-button matSuffix>
+          <mat-icon style="color: white; font-size: 25px;">search</mat-icon>
+        </button>
+      </mat-form-field>
+      <div class="icons">
+      <mat-icon style="margin-left: 20px; color: #F48500 ; font-size: 30px;">help</mat-icon>
+      <mat-icon style="margin-left: 20px; font-size: 30px;  color: #FAC280 ;">notifications</mat-icon> 
+      <mat-icon style="margin-left: 20px; font-size: 30px; color: #F48500 ;">person</mat-icon></div>
+    </mat-toolbar>
+     
